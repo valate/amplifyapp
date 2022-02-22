@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags required by Bootstrap -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="SMSFormHandler.js"></script>
+  <title>SMS Registration Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-6">
+        <h1>Register for SMS Alerts</h1>
+        <p>Enter your phone number below to sign up for PromotionName messages from ExampleCorp.</p>
+        <p>We don't share your contact information with anyone else. For more information, see our <a href="http://example.com/privacy">Privacy Policy</a>.</p>
+        <p>ExampleCorp alerts are only available to recipients in the United States.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="firstName" class="font-weight-bold">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Your first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="font-weight-bold">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Your last name" required>
+          </div>
+          <label for="areaCode" class="font-weight-bold">Phone number</label>
+          <div class="input-group">
+            <span class="h3">(&nbsp;</span>
+            <input type="tel" class="form-control" id="areaCode" placeholder="Area code" required>
+            <span class="h3">&nbsp;)&nbsp;</span>
+            <input type="tel" class="form-control" id="phone1" placeholder="555" required>
+            <span class="h3">&nbsp;-&nbsp;</span>
+            <input type="tel" class="form-control" id="phone2" placeholder="0199" required>
+          </div>
+          <div id="form-response"></div>
+          <button id="submit" type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12 text-center">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
