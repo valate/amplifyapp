@@ -10,8 +10,7 @@ $(document).ready(function() {
         utcSeconds = Date.now() / 1000,
         timestamp = new Date(0),
         phone = $("#areaCode").val()
-              + $("#phone1").val()
-              + $("#phone2").val();
+              + $("#phone1").val();
 
     e.preventDefault();
 
@@ -53,8 +52,7 @@ $(document).ready(function() {
                   utcSeconds = Date.now() / 1000,
                   timestamp = new Date(0),
                   phone = $("#areaCode").val()
-                        + $("#phone1").val()
-                        + $("#phone2").val();
+                        + $("#phone1").val();
           
               e.preventDefault();
           
