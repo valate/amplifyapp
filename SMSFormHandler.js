@@ -9,8 +9,7 @@ $(document).ready(function() {
         optTimestamp = undefined,
         utcSeconds = Date.now() / 1000,
         timestamp = new Date(0),
-        phone = $("#areaCode").val()
-              + $("#phone1").val();
+        phone = $("#phone1").val();
 
     e.preventDefault();
 
@@ -51,8 +50,7 @@ $(document).ready(function() {
                   optTimestamp = undefined,
                   utcSeconds = Date.now() / 1000,
                   timestamp = new Date(0),
-                  phone = $("#areaCode").val()
-                        + $("#phone1").val();
+                  phone = $("#phone1").val();
           
               e.preventDefault();
           
@@ -82,7 +80,7 @@ $(document).ready(function() {
           
                 $.ajax({
                   type: 'POST',
-                  url: 'https://example.execute-api.us-east-1.amazonaws.com/v1/register',
+                  url: 'https://nly4099jml.execute-api.us-east-1.amazonaws.com/v1/register',
                   contentType: 'application/json',
                   data: data,
                   success: function(res) {
