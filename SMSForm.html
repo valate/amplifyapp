@@ -12,7 +12,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="https://smsregistrationformtest.s3.amazonaws.com/Pinpoint-API/SMSFormHandler.js"></script>
+  <script type="text/javascript" src="SMSFormHandler.js"></script>
   <title>SMS Registration Form</title>
 </head>
 
@@ -39,8 +39,8 @@
           </div>
           <label for="areaCode" class="font-weight-bold">Phone number</label>
           <div class="input-group">
-            <span class="h3">(&nbsp;</span>
-            <input type="tel" class="form-control" id="phone1" placeholder="**********" required>
+            <span class="h3">&nbsp;</span>
+            <input type="tel" class="form-control" id="phone1" placeholder="000-000-0000" required>
           </div>
           <div id="form-response"></div>
           <button id="submit" type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
@@ -49,7 +49,7 @@
     </div>
     <div class="row mt-3">
       <div class="col-md-12 text-center">
-        <small class="text-muted"></small>
+      
       </div>
     </div>
   </div>
