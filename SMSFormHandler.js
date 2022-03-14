@@ -40,7 +40,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: 'POST',
-        url: 'https://nly4099jml.execute-api.us-east-1.amazonaws.com/v1',
+        url: 'https://nly4099jml.execute-api.us-east-1.amazonaws.com/v2',
         contentType: 'application/json',
         data: data,
         success: function(res) {
