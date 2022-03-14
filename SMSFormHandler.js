@@ -20,9 +20,9 @@ $(document).ready(function() {
       $('#form-response').html('<div class="mt-3 alert alert-info" role="alert">Please enter your last name.</div>');
     } else if (phone.match(/[^0-9]/gi)) {
       $('#form-response').html('<div class="mt-3 alert alert-info" role="alert">Your phone number contains invalid characters. Please check the phone number that you supplied.</div>');
-    } else if (phone.length < 10) {
+    } else if (phone.length < 11) {
       $('#form-response').html('<div class="mt-3 alert alert-info" role="alert">Please enter your phone number.</div>');
-    } else if (phone.length > 10) {
+    } else if (phone.length > 11) {
       $('#form-response').html('<div class="mt-3 alert alert-info" role="alert">Your phone number contains too many digits. Please check the phone number that you supplied.</div>');
     } else {
       $('#submit').prop('disabled', true);
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: 'POST',
-        url: 'https://example.execute-api.us-east-1.amazonaws.com/v1/register',
+        url: 'https://nly4099jml.execute-api.us-east-1.amazonaws.com/v1/register',
         contentType: 'application/json',
         data: data,
         success: function(res) {
